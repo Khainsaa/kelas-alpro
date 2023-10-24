@@ -2,7 +2,7 @@
 
 int main() {
     char jenisKelamin;
-    float tinggi, berat, bmi;
+    float tinggi, berat, bmi, test;
 
     printf("===INPUT===\n");
     printf("Pilih Jenis Kelamin (P/Pria, W/Wanita): ");
