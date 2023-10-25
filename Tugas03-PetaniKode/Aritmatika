@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void main(){
-
+    int d;
     int a, b, c;
 
     printf("Inputkan nilai a: ");
