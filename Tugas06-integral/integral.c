@@ -4,7 +4,7 @@ double f(double x){
     return 2*x+3;
 }
 
-main(){
+int main(){
     double a,b,h,sum=0,integral,x;
     int n;
     printf("Masukkan batas bawah\na: ");
@@ -12,7 +12,7 @@ main(){
     printf("Masukkan batas atas\nb: ");
     scanf("%lf",&b);
     printf("Masukkan jumlah blok\nn: ");
-    scanf("%ld",&n);
+    scanf("%d",&n);
     h=(b-a)/n;
     int i;
     for(i=1;i<n;i++){
@@ -22,4 +22,5 @@ main(){
     }
     integral=h/2.0*(f(a)+2*sum+f(b));
     printf("\nIntegralnya adalah: %lf",integral);
+    
 }
