@@ -1,27 +1,26 @@
-#include <stdio.h>
+//integral trapezoid
+#include<stdio.h>
 
-double f(double x) {
-    return 2 * x + 3;
+double f(double x){
+    return 2*x+3;
 }
 
-double trapezoidalIntegration(double a, double b, int n) {
-    double h = (b - a) / n;
-    double sum = (f(a) + f(b)) / 2;
+main(){
+    double a,b,h,sum=0,integral,x;
+    int n;
+    printf("Masukkan batas awal\na: ");
+    scanf("%lf",&a);
+    printf("Masukkan batas akhir\nb: ");
+    scanf("%lf",&b);
+    printf("Masukkan angka sub-intervalnya\nn: ");
+    scanf("%ld",&n);
+    h=(b-a)/n;
+    int i;
+    for(i=1;i<n;i++){
+        x =a+i*h;
+        sum=sum+f(x);
 
-    for (int i = 1; i < n; i++) {
-        sum += f(a + i * h);
     }
-
-    return h * sum;
-}
-
-int main() {
-    double a = 2; 
-    double b = 3; 
-    int n = 80;   
-
-    double result = trapezoidalIntegration(a, b, n);
-    printf("Hasil integral: %.2f\n", result);
-
-    return 0;
+    integral=h/2.0*(f(a)+2*sum+f(b));
+    printf("\nIntegralnya adalah: %.2lf",integral);
 }
