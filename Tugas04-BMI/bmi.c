@@ -1,6 +1,5 @@
 #include <stdio.h>
 int main() {
-<<<<<<< HEAD:Tugas04-BMI/bmi.c
     int pilihan, jenisKelamin;
     float tinggi, berat, bmi;
     //Input
@@ -11,19 +10,6 @@ int main() {
 	switch (pilihan) {
 		case 1:
         printf("Masukkan Tinggi Badan (Meter): ");
-=======
-    char jenisKelamin;
-    float tinggi, berat, bmi, test;
-
-    printf("===INPUT===\n");
-    printf("Pilih Jenis Kelamin (P/Pria, W/Wanita): ");
-    scanf(" %c", &jenisKelamin);
-
-    switch (jenisKelamin) {
-        case 'P':
-        case 'p':
-            printf("Masukkan Tinggi Badan (Meter): ");
->>>>>>> origin/main:kalkulator bmi
             scanf("%f", &tinggi);
 
             printf("Masukkan Berat Badan (Kilogram): ");
