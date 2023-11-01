@@ -2,7 +2,7 @@
 
 // Fungsi yang akan diintegrasikan
 double f(double x) {
-    return 2 * x+ 3;
+    return x * x+ 1;
 }
 
 // Metode trapesium untuk menghitung integral
@@ -18,8 +18,8 @@ double trapezoidalIntegration(double a, double b, int n) {
 }
 
 int main() {
-    double a = 2.0; // Batas bawah integral
-    double b = 3.0; // Batas atas integral
+    double a = 0.0; // Batas bawah integral
+    double b = 1.0; // Batas atas integral
     int n = 100;   // Jumlah trapesium (semakin besar n, semakin akurat)
 
     double result = trapezoidalIntegration(a, b, n);
