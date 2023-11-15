@@ -23,4 +23,5 @@ int main(){
     integral=h/2.0*(f(a)+2*sum+f(b));
     printf("\nIntegralnya adalah: %lf",integral);
     
+    return 0;
 }

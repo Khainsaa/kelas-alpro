@@ -11,4 +11,6 @@ int main() {
 		n=r;
 	}
 	printf("Nilai GCD nya adalah : %d\n",m);
+
+	return 0;
 }
