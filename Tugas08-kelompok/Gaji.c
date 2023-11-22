@@ -77,5 +77,6 @@ int main() {
         break;
     }
     displayGaji();
+    
     return 0;
 }
