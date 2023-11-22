@@ -76,7 +76,7 @@ int main() {
     printf("Golongan yang anda masukkan tidak valid");
         break;
     }
+
     displayGaji();
-    
     return 0;
 }
